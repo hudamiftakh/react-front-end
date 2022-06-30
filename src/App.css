@@ -25,7 +25,29 @@
 }
 
 .navbar_wrapper a {
- padding-left: 30px;
+ /*padding-left: 30px;*/
+}
+td{
+  text-align: left;
+}
+th{
+  text-align: left;
+}
+.btnDelete{
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.btnUpdate{
+  background-color: green;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .App-link {

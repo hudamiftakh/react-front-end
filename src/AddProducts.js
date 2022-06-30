@@ -1,13 +1,19 @@
+
 import Header from './Header'
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+
+
 function AddProducts() {
 	const [name,setName] = useState("");
 	const [file,setFile] = useState("");
 	const [price,setPrice] = useState("");
 	const [description,setDescription] = useState("");
+	const history = useNavigate();
 
+	
 async function addProduct() {
-		console.warn(name,file,price, description);
+
 		const formData = new FormData();
 		formData.append('file', file);
 		formData.append('price', price);
@@ -19,7 +25,8 @@ async function addProduct() {
 			body : formData,
 		});
 
-		alert('data sudah tersimpan');
+		history("/");
+
 	}
 
 	return (

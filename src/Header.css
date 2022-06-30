@@ -1,0 +1,11 @@
+.navbar_link{
+	background-color: #333;
+	padding: 10px;
+	border-radius: 8px;
+	color: white;
+	text-align: center;
+}
+.navbar_link:hover{
+	background-color: blueviolet;
+	color: white;
+}
